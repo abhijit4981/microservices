@@ -25,10 +25,9 @@ import org.hibernate.annotations.CreationTimestamp;
 public class ModelPojo {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
-
-    private String column1;
-    private String column2;
-    private String column3;
+    private Long mobileNumber;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String password;
 }
