@@ -37,7 +37,9 @@ public class ComponyServiceImpl implements CompanyService{
 
     @Override
     public COMPANY_ALIAS updateCOMPANY_ALIAS(COMPANY_ALIAS company_alias) {
-        return null;
+        log.info("+++++++++++++++++++++++++++++++++++++++++++++++++++");
+        log.info("Updated data comming is "+company_alias);
+        return companyRepository.save(company_alias);
     }
 
     @Override
